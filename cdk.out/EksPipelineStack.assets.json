@@ -1,0 +1,20 @@
+{
+  "version": "13.0.0",
+  "files": {
+    "9b1dd79a051663c47cd3dfc995c3f257d87700ed2735569808adccc25526e075": {
+      "source": {
+        "path": "EksPipelineStack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "478206426222-us-east-1": {
+          "bucketName": "cdk-hnb659fds-assets-478206426222-us-east-1",
+          "objectKey": "9b1dd79a051663c47cd3dfc995c3f257d87700ed2735569808adccc25526e075.json",
+          "region": "us-east-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::478206426222:role/cdk-hnb659fds-file-publishing-role-478206426222-us-east-1"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

@@ -1,0 +1,287 @@
+{
+  "version": "13.0.0",
+  "artifacts": {
+    "EksPipelineStackUpdateDNSAppDnsEBA64D87.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "EksPipelineStackUpdateDNSAppDnsEBA64D87.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "EksPipelineStackUpdateDNSAppDnsEBA64D87": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://478206426222/us-east-1",
+      "properties": {
+        "templateFile": "EksPipelineStackUpdateDNSAppDnsEBA64D87.template.json",
+        "tags": {
+          "Application": "AppDns",
+          "Environment": "UpdateDNS"
+        },
+        "validateOnSynth": true,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::478206426222:role/cdk-hnb659fds-deploy-role-478206426222-us-east-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::478206426222:role/cdk-hnb659fds-cfn-exec-role-478206426222-us-east-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-478206426222-us-east-1/5789bd061bb97aa928c1557eb175cf1e5e820402ff33b44985d1e68c60de6aa6.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "EksPipelineStackUpdateDNSAppDnsEBA64D87.assets"
+        ],
+        "stackName": "UpdateDNS-AppDns"
+      },
+      "dependencies": [
+        "EksPipelineStackUpdateDNSAppDnsEBA64D87.assets"
+      ],
+      "metadata": {
+        "/EksPipelineStack/UpdateDNS/AppDns": [
+          {
+            "type": "aws:cdk:stack-tags",
+            "data": [
+              {
+                "Key": "Application",
+                "Value": "AppDns"
+              },
+              {
+                "Key": "Environment",
+                "Value": "UpdateDNS"
+              }
+            ],
+            "trace": [
+              "ConstructNode.addMetadata (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:252:92)",
+              "Object.addStackArtifactToAssembly (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\_shared.ts:25:16)",
+              "DefaultStackSynthesizer.emitStackArtifact (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\stack-synthesizer.ts:29:5)",
+              "DefaultStackSynthesizer.synthesize (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\default-synthesizer.ts:287:10)",
+              "D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:184:29",
+              "visit (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "synthesizeTree (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:176:3)",
+              "Object.synthesize (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:39:3)",
+              "AppDnsStage.synth (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "Object.pipelineSynth (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\pipelines\\lib\\private\\construct-internals.ts:27:16)",
+              "Function.fromStage (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\pipelines\\lib\\blueprint\\stage-deployment.ts:24:22)",
+              "Wave.addStage (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\pipelines\\lib\\blueprint\\wave.ts:34:33)",
+              "CodePipeline.addStage (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\pipelines\\lib\\main\\pipeline-base.ts:52:42)",
+              "new EksPipelineStack (D:\\Sandhya\\AWS_projects\\aws_eks\\lib\\eks-pipeline-stack.ts:90:14)",
+              "Object.<anonymous> (D:\\Sandhya\\AWS_projects\\aws_eks\\bin\\eks-pipeline.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1120:14)",
+              "Module.m._compile (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1174:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:998:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:839:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1120:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1174:10)",
+              "Module.load (node:internal/modules/cjs/loader:998:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:839:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/EksPipelineStack/UpdateDNS/AppDns/SsmParameterValue:--eks-cdk-pipelines--hostZoneId:C96584B6-F00A-464E-AD19-53AFF4B05118.Parameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SsmParameterValueekscdkpipelineshostZoneIdC96584B6F00A464EAD1953AFF4B05118Parameter",
+            "trace": [
+              "Function.fromStringParameterAttributes (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\aws-ssm\\lib\\parameter.ts:183:9)",
+              "Function.valueForTypedStringParameter (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\aws-ssm\\lib\\parameter.ts:234:17)",
+              "Function.valueForStringParameter (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\aws-ssm\\lib\\parameter.ts:223:28)",
+              "new AppDnsStack (D:\\Sandhya\\AWS_projects\\aws_eks\\lib\\app-dns-stack.ts:13:44)",
+              "new AppDnsStage (D:\\Sandhya\\AWS_projects\\aws_eks\\lib\\app-dns-stage.ts:13:5)",
+              "new EksPipelineStack (D:\\Sandhya\\AWS_projects\\aws_eks\\lib\\eks-pipeline-stack.ts:82:25)",
+              "Object.<anonymous> (D:\\Sandhya\\AWS_projects\\aws_eks\\bin\\eks-pipeline.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1120:14)",
+              "Module.m._compile (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1174:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:998:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:839:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1120:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1174:10)",
+              "Module.load (node:internal/modules/cjs/loader:998:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:839:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/EksPipelineStack/UpdateDNS/AppDns/SsmParameterValue:--eks-cdk-pipelines--zoneName:C96584B6-F00A-464E-AD19-53AFF4B05118.Parameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SsmParameterValueekscdkpipelineszoneNameC96584B6F00A464EAD1953AFF4B05118Parameter",
+            "trace": [
+              "Function.fromStringParameterAttributes (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\aws-ssm\\lib\\parameter.ts:183:9)",
+              "Function.valueForTypedStringParameter (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\aws-ssm\\lib\\parameter.ts:234:17)",
+              "Function.valueForStringParameter (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\aws-ssm\\lib\\parameter.ts:223:28)",
+              "new AppDnsStack (D:\\Sandhya\\AWS_projects\\aws_eks\\lib\\app-dns-stack.ts:18:42)",
+              "new AppDnsStage (D:\\Sandhya\\AWS_projects\\aws_eks\\lib\\app-dns-stage.ts:13:5)",
+              "new EksPipelineStack (D:\\Sandhya\\AWS_projects\\aws_eks\\lib\\eks-pipeline-stack.ts:82:25)",
+              "Object.<anonymous> (D:\\Sandhya\\AWS_projects\\aws_eks\\bin\\eks-pipeline.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1120:14)",
+              "Module.m._compile (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1174:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:998:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:839:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1120:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1174:10)",
+              "Module.load (node:internal/modules/cjs/loader:998:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:839:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/EksPipelineStack/UpdateDNS/AppDns/appCnameRecord/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "appCnameRecord922E8112",
+            "trace": [
+              "new RecordSet (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\aws-route53\\lib\\record-set.ts:119:23)",
+              "new CnameRecord (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\aws-route53\\lib\\record-set.ts:180:5)",
+              "new AppDnsStack (D:\\Sandhya\\AWS_projects\\aws_eks\\lib\\app-dns-stack.ts:28:5)",
+              "new AppDnsStage (D:\\Sandhya\\AWS_projects\\aws_eks\\lib\\app-dns-stage.ts:13:5)",
+              "new EksPipelineStack (D:\\Sandhya\\AWS_projects\\aws_eks\\lib\\eks-pipeline-stack.ts:82:25)",
+              "Object.<anonymous> (D:\\Sandhya\\AWS_projects\\aws_eks\\bin\\eks-pipeline.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1120:14)",
+              "Module.m._compile (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1174:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:998:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:839:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1120:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1174:10)",
+              "Module.load (node:internal/modules/cjs/loader:998:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:839:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/EksPipelineStack/UpdateDNS/AppDns/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:22:24)",
+              "D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:166:5",
+              "visit (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "injectMetadataResources (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:157:3)",
+              "Object.synthesize (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "AppDnsStage.synth (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "Object.pipelineSynth (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\pipelines\\lib\\private\\construct-internals.ts:27:16)",
+              "Function.fromStage (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\pipelines\\lib\\blueprint\\stage-deployment.ts:24:22)",
+              "Wave.addStage (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\pipelines\\lib\\blueprint\\wave.ts:34:33)",
+              "CodePipeline.addStage (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\pipelines\\lib\\main\\pipeline-base.ts:52:42)",
+              "new EksPipelineStack (D:\\Sandhya\\AWS_projects\\aws_eks\\lib\\eks-pipeline-stack.ts:90:14)",
+              "Object.<anonymous> (D:\\Sandhya\\AWS_projects\\aws_eks\\bin\\eks-pipeline.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1120:14)",
+              "Module.m._compile (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1174:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:998:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:839:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1120:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1174:10)",
+              "Module.load (node:internal/modules/cjs/loader:998:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:839:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/EksPipelineStack/UpdateDNS/AppDns/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion",
+            "trace": [
+              "addBootstrapVersionRule (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\default-synthesizer.ts:451:17)",
+              "DefaultStackSynthesizer.synthesize (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\default-synthesizer.ts:277:7)",
+              "D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:184:29",
+              "visit (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "synthesizeTree (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:176:3)",
+              "Object.synthesize (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:39:3)",
+              "AppDnsStage.synth (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "Object.pipelineSynth (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\pipelines\\lib\\private\\construct-internals.ts:27:16)",
+              "Function.fromStage (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\pipelines\\lib\\blueprint\\stage-deployment.ts:24:22)",
+              "Wave.addStage (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\pipelines\\lib\\blueprint\\wave.ts:34:33)",
+              "CodePipeline.addStage (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\pipelines\\lib\\main\\pipeline-base.ts:52:42)",
+              "new EksPipelineStack (D:\\Sandhya\\AWS_projects\\aws_eks\\lib\\eks-pipeline-stack.ts:90:14)",
+              "Object.<anonymous> (D:\\Sandhya\\AWS_projects\\aws_eks\\bin\\eks-pipeline.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1120:14)",
+              "Module.m._compile (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1174:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:998:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:839:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1120:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1174:10)",
+              "Module.load (node:internal/modules/cjs/loader:998:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:839:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/EksPipelineStack/UpdateDNS/AppDns/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion",
+            "trace": [
+              "addBootstrapVersionRule (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\default-synthesizer.ts:461:3)",
+              "DefaultStackSynthesizer.synthesize (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\default-synthesizer.ts:277:7)",
+              "D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:184:29",
+              "visit (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "synthesizeTree (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:176:3)",
+              "Object.synthesize (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:39:3)",
+              "AppDnsStage.synth (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "Object.pipelineSynth (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\pipelines\\lib\\private\\construct-internals.ts:27:16)",
+              "Function.fromStage (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\pipelines\\lib\\blueprint\\stage-deployment.ts:24:22)",
+              "Wave.addStage (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\pipelines\\lib\\blueprint\\wave.ts:34:33)",
+              "CodePipeline.addStage (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\@aws-cdk\\pipelines\\lib\\main\\pipeline-base.ts:52:42)",
+              "new EksPipelineStack (D:\\Sandhya\\AWS_projects\\aws_eks\\lib\\eks-pipeline-stack.ts:90:14)",
+              "Object.<anonymous> (D:\\Sandhya\\AWS_projects\\aws_eks\\bin\\eks-pipeline.ts:7:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1120:14)",
+              "Module.m._compile (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1174:10)",
+              "Object.require.extensions.<computed> [as .ts] (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:998:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:839:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (D:\\Sandhya\\AWS_projects\\aws_eks\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1120:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1174:10)",
+              "Module.load (node:internal/modules/cjs/loader:998:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:839:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ]
+      },
+      "displayName": "EksPipelineStack/UpdateDNS/AppDns"
+    }
+  }
+}
